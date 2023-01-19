@@ -1,3 +1,5 @@
+import {Character} from "../character/character";
+
 const Characters = () => {
     const characters = [
         {
@@ -51,7 +53,9 @@ const Characters = () => {
     ];
     return (
         <div>
-            Characters
+            {
+                characters.map(character => <Character key={character.id} character={character}/>)
+            }
         </div>
     );
 };
