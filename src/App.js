@@ -1,7 +1,9 @@
+import {Simpsons} from "./components/simpsons/simpsons";
+
 const App = () => {
  return (
   <div>
-   hw1
+   <Simpsons/>
   </div>
  );
 };
